@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -25,7 +27,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     cursor: default;
-    font-family: "Montserrat", Times, serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -76,15 +78,13 @@ nav ul li{
     text-transform: uppercase;
 }
 
-nav ul li:hover{
+nav ul li:hover, nav ul li.active a{
     margin-left: 15px;
     font-weight: bold;
 }
 
 nav ul li.active a{
-    margin-left: 15px;
     transition: all 1s;
-    font-weight: bold;
 }
 
 .logo {
