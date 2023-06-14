@@ -1,0 +1,70 @@
+@media screen and (max-width: 800px) {
+    .box__wrapper {
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 30px;
+    }
+
+    header {
+        position: fixed;
+        display: block;
+        padding: 10px 30px;
+        height: unset;
+        width: 100vw;
+        background-color: rgb(0,0,0, 0.75);
+    }
+
+    nav {
+        position: relative;
+        text-align: right;
+    }
+
+    nav .menu__text {
+        text-transform: uppercase;
+        cursor: pointer;
+        display: block;
+        transition: all 0.3s;
+        z-index: 1000;
+    }
+
+    nav .menu__text:hover{
+        transform: scale(1.05);    
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 54px;
+        right: -280px;
+        width: 250px;
+        background-color: rgb(0,0,0, 0.75);
+        transition: all 0.3s;
+        padding: 10px 20px;
+    }
+
+    nav ul.--visible{
+        transform: translateX(-250px);
+    }
+
+    .intro__name {
+        font-size: 6rem;
+    }
+
+    aside {
+        bottom: 0;
+        right: 10px;
+        width: 50px;
+    }
+
+    .menu__icons {
+        flex-wrap: wrap;
+    }
+
+    .skill__icons, .pointsocial {
+        width: 95vw;
+    }
+}

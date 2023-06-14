@@ -49,7 +49,7 @@ a {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     margin: 0 auto;
 }
@@ -57,17 +57,22 @@ section {
 
 aside {
     position: fixed;
-    min-width: 200px;
     bottom: 30px;
     right: 30px;
 }
 
 header {
     position: fixed;
-    left: 30px;
+    padding: 30px;
     height: 100vh;
     display: flex;
     align-items: center;
+    z-index: 999;
+}
+
+nav .menu__text {
+    text-transform: uppercase;
+    display: none;
 }
 
 nav ul li{
@@ -177,10 +182,11 @@ main section:not(#main) {
     text-align:center;
     background-color: rgba(122, 122, 122, 0.185);
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 0 20px;
-    display: inline-block;
-
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 }    
 
 .menu__icons:hover{
@@ -208,9 +214,9 @@ main section:not(#main) {
 .box__wrapper {
     margin: 30px auto 0;
     display: flex;
-    justify-content: space-between;
     width: 1200px;
     gap: 30px;
+    justify-content: center;
 }
 
 .box__elem, .box__elemi {
@@ -219,18 +225,14 @@ main section:not(#main) {
     border-radius: 30px;
     transition: all 0.2s;
     background-color: rgba(122, 122, 122, 0.185);
-    position: realtive;
+    position: relative;
+    width: 300px;
 }
 
 .box__elem:hover{
     box-shadow:0 0 20px #cccccc;
     background-color: rgba(0, 0, 0, 0.075);
     transition: all 0.3s;
-}
-
-.box__elemi {
-    min-height: 200px;
-    width: 25%;
 }
 
 .job{
@@ -249,13 +251,8 @@ main section:not(#main) {
 }
 
 .skill__icons {
-    border: 2px solid white;
-    border-radius: 50px;
-    transition: all 0.2s;
-    padding: 10px 20px;
+    padding: 10px;
     width: 450px;
-    display: flex;
-    justify-content: space-around;
     margin: 20px auto 0px;
 }
 
@@ -289,8 +286,7 @@ main section:not(#main) {
     width: 40px;
 }
 
-.thumbnail, .thumbnail__x {
-    margin: 10px;
+.thumbnail {
     width: 330px;
     height: 230px;
 }
@@ -316,14 +312,9 @@ main section:not(#main) {
 }
 
 .prace{
-    gap:20px;
-    display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    width: 1120px;
     align-items: center;
-    margin: 5px auto 0;
-    justify-content: center;
 }
 
 .intro__textgalerry{
@@ -331,7 +322,6 @@ main section:not(#main) {
 }
 
 .thumbnail__x{
-    margin: 10px;
     width: 200px;
     height: 280px;
     
@@ -372,22 +362,10 @@ main section:not(#main) {
     display: none;
 }
 
-.wrapcontact {
-    margin: 25px auto 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 740px;
-}
-
 .box__contact {
+    border: none;
     padding: 0px 30px;
-    /* border: 2px solid white; */
-    border-radius: 30px;
-    margin-top: 10px;
-    transition: all 0.2s;
     background-color: rgba(100, 100, 100, 0.24);
-    position: relative;
     width: 340px;
 }
 
@@ -404,7 +382,7 @@ main section:not(#main) {
  }
 
  .intro__textcnt{
-    padding-top: 2vh;
+    margin-top: 50px;
  }
 
 .socialtxt{
